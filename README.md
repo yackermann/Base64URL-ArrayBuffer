@@ -29,6 +29,9 @@ Just add `<script src="base64url-arraybuffer.js"></script>` to your HTML file.
  - __window.base64url.decode(str)__ - Decodes Base64URL string to `ArrayBuffer`
 
 ## License
+
 Copyright (c) 2017 Yuriy Ackermann
+
 Copyright (c) 2012 Niklas von Hertzen
+
 Licensed under the MIT license.
