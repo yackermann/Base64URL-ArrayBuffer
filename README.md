@@ -1,20 +1,32 @@
-# base64-arraybuffer
+# Base64URL-ArrayBuffer
 
-[![Build Status](https://travis-ci.org/niklasvh/base64-arraybuffer.png)](https://travis-ci.org/niklasvh/base64-arraybuffer)
-[![NPM Downloads](https://img.shields.io/npm/dm/base64-arraybuffer.svg)](https://www.npmjs.org/package/base64-arraybuffer)
-[![NPM Version](https://img.shields.io/npm/v/base64-arraybuffer.svg)](https://www.npmjs.org/package/base64-arraybuffer)
+Encode/decode Base64URL data into ArrayBuffers
 
-Encode/decode base64 data into ArrayBuffers
+Based on original [base64-arraybuffer](https://github.com/niklasvh/base64-arraybuffer) by [@niklasvh](https://github.com/niklasvh)
 
-## Getting Started
-Install the module with: `npm install base64-arraybuffer`
+## Getting Started:
 
-## API
-The library encodes and decodes base64 to and from ArrayBuffers
+TODO:
 
- - __encode(buffer)__ - Encodes `ArrayBuffer` into base64 string
- - __decode(str)__ - Decodes base64 string to `ArrayBuffer`
+ - Submit to NPM
+ - Submit to CDNJS
+
+## 
+
+The library encodes and decodes Base64URL to and from ArrayBuffers
+
+### Node.js/AMD
+ - __encode(buffer)__ - Encodes `ArrayBuffer` into Base64URL string
+ - __decode(str)__ - Decodes Base64URL string to `ArrayBuffer`
+
+### Browser
+
+Just add `<script src="base64url-arraybuffer.js"></script>` to your HTML file.
+
+ - __window.base64url.encode(buffer)__ - Encodes `ArrayBuffer` into Base64URL string
+ - __window.base64url.decode(str)__ - Decodes Base64URL string to `ArrayBuffer`
 
 ## License
+Copyright (c) 2017 Yuriy Ackermann
 Copyright (c) 2012 Niklas von Hertzen
 Licensed under the MIT license.

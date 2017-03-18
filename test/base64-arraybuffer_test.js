@@ -1,6 +1,6 @@
 (function(){
   "use strict";
-  var base64_arraybuffer = require('../lib/base64-arraybuffer.js');
+  var base64_arraybuffer = require('../lib/base64url-arraybuffer.js');
 
   /*
   ======== A Handy Little Nodeunit Reference ========
@@ -56,17 +56,17 @@
     'encode': function(test) {
       test.expect(4);
 
-      test.equal(base64_arraybuffer.encode(stringArrayBuffer("Hello world")), "SGVsbG8gd29ybGQ=", 'encode "Hello world"');
+      test.equal(base64_arraybuffer.encode(stringArrayBuffer("Hello world")), "SGVsbG8gd29ybGQ", 'encode "Hello world"');
       test.equal(base64_arraybuffer.encode(stringArrayBuffer("Man")), 'TWFu', 'encode "Man"');
-      test.equal(base64_arraybuffer.encode(stringArrayBuffer("Ma")), "TWE=", 'encode "Ma"');
-      test.equal(base64_arraybuffer.encode(stringArrayBuffer("Hello worlds!")), "SGVsbG8gd29ybGRzIQ==", 'encode "Hello worlds!"');
+      test.equal(base64_arraybuffer.encode(stringArrayBuffer("Ma")), "TWE", 'encode "Ma"');
+      test.equal(base64_arraybuffer.encode(stringArrayBuffer("Hello worlds!")), "SGVsbG8gd29ybGRzIQ", 'encode "Hello worlds!"');
       test.done();
     },
     'decode': function(test) {
       test.expect(3);
       test.ok(testArrayBuffers(base64_arraybuffer.decode("TWFu"), stringArrayBuffer("Man")), 'decode "Man"');
-      test.ok(testArrayBuffers(base64_arraybuffer.decode("SGVsbG8gd29ybGQ="), stringArrayBuffer("Hello world")), 'decode "Hello world"');
-      test.ok(testArrayBuffers(base64_arraybuffer.decode("SGVsbG8gd29ybGRzIQ=="), stringArrayBuffer("Hello worlds!")), 'decode "Hello worlds!"');
+      test.ok(testArrayBuffers(base64_arraybuffer.decode("SGVsbG8gd29ybGQ"), stringArrayBuffer("Hello world")), 'decode "Hello world"');
+      test.ok(testArrayBuffers(base64_arraybuffer.decode("SGVsbG8gd29ybGRzIQ"), stringArrayBuffer("Hello worlds!")), 'decode "Hello worlds!"');
       test.done();
     }
   };
