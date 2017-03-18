@@ -1,5 +1,7 @@
 # Base64URL-ArrayBuffer
 
+[![Build Status](https://travis-ci.org/herrjemand/Base64URL-ArrayBuffer.svg?branch=master)](https://travis-ci.org/herrjemand/Base64URL-ArrayBuffer)
+
 Encode/decode Base64URL data into ArrayBuffers
 
 Based on original [base64-arraybuffer](https://github.com/niklasvh/base64-arraybuffer) by [@niklasvh](https://github.com/niklasvh)
